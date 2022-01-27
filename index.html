@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Syed Raza Portfolio (Data Analyst)</title>
+		<title>Syed Raza Portfolio (Business Data Analyst)</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +19,7 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>Data Analyst<br />
+						<h1>Business Data Analyst<br />
 						Portfolio</h1>
 						<p>Hello! My name is Syed Raza. I've spent the last two years gaining expertise in SQL.  I'm also well aquainted with Tableau visualization software. 
 							Please scroll to see the illustraion of my expertise as well as some intriguing posts and analysis of various topics.  <a href= "https://www.linkedin.com/in/syed-raza-b426b117b/">@LinkedIn_SyedRaza  </a>
@@ -31,7 +31,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Syed Raza | Data Analyst</a>
+						<a href="index.html" class="logo">Syed Raza | Business Data Analyst</a>
 					</header>
 
 				<!-- Nav -->
@@ -49,12 +49,39 @@
 					<div id="main">
 
 						<!-- Featured Post -->
+						
 							<article class="post featured">
 								<header class="major">
 									
-									<h2><a href="#">NBA Player/Team Analysis <br /> 
+									<h2><a href="#"> Data Cleansing <br /> Using Microsoft SQL Server <br /> 
+										
+									</a></h2>
+									<p>In this project, our goal was to clean the data that is being imported and make it more useable and easy to access. This is a part of the ETL process. 
+										We accomplished this by the following- we used the CONVERT function to standardize the format of the date column.  We populated the property 
+										address column wherever there were null values before breaking the address, city, state into separate columns using SUBSTRING, 
+										CHARINDEX, PARSENAME, REPLACE functions. We then changed 'Y' 'N' values to 'Yes' 'No' using CASE statements.  
+										We removed duplicates using Row_Number, a CTE (Common Table Expression), and a Window Function/Partition By. 
+										Finally, we deleted some useless columns that were not needed.  Please click on the button below to view each query 
+										and the gradual process in my GitHub respository. 
+									    
+									</p>
+								</header>
+								<a href="#" class="image main"><img src="images/DataCleansing.JPG" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://github.com/syedraza48/PortfolioProjects/blob/main/Data%20Cleansing.sql" class="button large">View Queries</a></li>
+								</ul>
+							</article>
+
+							<!-- Posts -->
+                            <section class="posts">
+                                <article>
+                                    <header>
+                                       
+                                       
+									<h2><a href="#">NBA Player & Team FG% Analysis <br /> 
 										Using SQL and Tableau <br />
 									</a></h2>
+									<a href="#" class="image main"><img src="images/NBA_SQL_FGP.JPG" alt="" /></a>
 									<p>In this project, we joined two tables in PostgreSQL and displayed the results in a basic bar graph using Tableau visualization tool.
 									The data was extracted from ESPN.com using Microsoft Excel. The excel files were then used to load data into our database where we
 									created two tables- "player_stats" and "team_stats." The query was stored in a view for easier access. We then took our tabular results from the query 
@@ -64,18 +91,20 @@
 									    
 									</p>
 								</header>
-								<a href="#" class="image main"><img src="images/NBA_SQL_FGP.JPG" alt="" /></a>
+								
 								<ul class="actions special">
 									<li><a href="https://public.tableau.com/app/profile/syed.raza2208" class="button large">View Tableau Chart</a></li>
 								</ul>
-							</article>
-
-							<!-- Posts -->
+                                </article>
+						
+								
+								</article>
+									<!-- Posts -->
                             <section class="posts">
                                 <article>
                                     <header>
                                        
-                                        <h2><a href="#"> | SQL QUERIES | <br />
+                                        <h2><a href="#"> SQL QUERIES <br />
                                         </a></h2>
                                     </header>
                                     <a href="#" class="image fit"><img src="images/SQL_PG.JPG" alt="" /></a>
@@ -88,6 +117,8 @@
 						
 								
 								</article>
+
+
 							</section>
 
 					
@@ -96,7 +127,7 @@
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
-								<p>46 Haig Road<br />
+								<p>78 Berkley Street<br />
 								Valley Stream, NY 11581</p>
 							</section>
 							<section>
